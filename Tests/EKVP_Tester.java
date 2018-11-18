@@ -39,7 +39,7 @@ public class EKVP_Tester {
         	System.out.println("Finished writing file!");
         	
         	//READ
-        	/*
+        	
         	IOInterface = new IO();
         	IOInterface.OpenReadFile(filePath);
         	System.out.println("Opening encrypted file...");
@@ -50,7 +50,7 @@ public class EKVP_Tester {
         	}
     		
 	        IOInterface.CloseReadFile();
-			*/
+			
         }
         catch(Exception ex) {
             System.err.println(
