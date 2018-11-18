@@ -14,8 +14,7 @@ public class EKVP_Tester {
 
         // The name of the file to create.
         String filePath = "test.ekvp";
-	String desKey = "1234567812345678";
-	    
+        String desKey = "1234567812345678";
         
         byte[] keyBytes = DatatypeConverter.parseBase64Binary(desKey);
 		SecretKeyFactory factory = SecretKeyFactory.getInstance("DES");
@@ -41,7 +40,6 @@ public class EKVP_Tester {
         	System.out.println("Finished writing file!");
         	
         	//READ
-        	
         	IOInterface = new IO();
         	IOInterface.OpenReadFile(filePath);
         	System.out.println("Opening encrypted file...");
