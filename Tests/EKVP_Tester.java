@@ -14,8 +14,10 @@ public class EKVP_Tester {
 
         // The name of the file to create.
         String filePath = "test.ekvp";
+	String desKey = "1234567812345678";
+	    
         
-        byte[] keyBytes = DatatypeConverter.parseBase64Binary("1234567812345678");
+        byte[] keyBytes = DatatypeConverter.parseBase64Binary(desKey);
 		SecretKeyFactory factory = SecretKeyFactory.getInstance("DES");
 		SecretKey enc_key = factory.generateSecret(new DESKeySpec(keyBytes));
 
